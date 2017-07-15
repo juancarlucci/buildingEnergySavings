@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>CodeCycle Map</title>
+      <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+      <link href="css/loader_Cycle3.css" rel="stylesheet">
+
+      
+      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet'>
+
+      <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.1/mapbox-gl.js'></script>
+      <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.1/mapbox-gl.css' rel='stylesheet' />
+
+      <!-- Require d3 v3 -->
+      <script src="https://d3js.org/d3.v3.min.js"></script>
+      <!-- <script type="text/javascript" src="js/chart6_d3.js"></script> -->
+      <!-- Load c3.css -->
+      <link href="css/c3.css" rel="stylesheet">
+      <!-- c3.js -->
+      <script src="js/c3.min.js"></script>
+
+      <!-- Require d3 v4 -->
+      <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+      <!-- <script type="text/javascript" src="js/chart7_d3.js"></script> -->
+
+       <script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js"></script>
+
+
+      <script type="text/javascript" src="js/leaflet.js"></script>
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="js/leaflet-search.min.js"></script>
+      <link rel="stylesheet" href="css/style.css">
+
+      <script type="text/javascript" src="js/main.js"></script>
+
+      <!-- ChartJS -->
+      <script type="text/javascript" src="js/Chart.bundle.min.js"></script>
+
+
+    <style>
+      
+    </style>
+      
+      
+  </head>
+  
+  <body>
+  <!-- add html elements to the legend !-->
+      <div id='legend' class='legend'>
+        <h2>Total MWh savings for all projects:</h2> 
+        <!-- <div id="totalSavings"></div> -->
+        <div> <p id="totalSavings"></p></div>
+        <!-- <div> <p id="currentZoom"></p></div> -->
+
+      </div>
+    <div class='sidebar'>
+      <div class='heading'>
+        <!-- <nav id='filters' class='filter-ui'></nav> -->
+        <h1 class='siteTitle'>CodeCycle</h1>
+        <!-- <button id='zoomto' class='btn-control'>Zoom to bounds</button> -->
+      </div>
+
+      <div class="chart chart-container">
+        <div id="chart"></div>
+        
+      </div>
+      
+   
+    <div id="markerChartContainer" class="chart chart-container">
+      <canvas id="markerChart"></canvas>
+    </div>
+
+    </div> <!-- end sidebar -->
+    <div id='listings' class='listings'></div>
+   
+
+    <div id='map' class='map'> </div>
+
+ 
+    <!-- <div class='loader' id="wrapper">
+      <div id="container">
+        <div class="section">C</div>
+        <div class="section">O</div>
+        <div class="section">D</div>
+        <div class="section">E</div>
+        <div class="section">C</div>
+        <div class="section">Y</div>
+        <div class="section">C</div>
+        <div class="section">L</div>
+        <div class="section">E</div>
+      </div>
+    </div> -->
+      <h1 class="loader">CODE</h1>
+      <div class="loader circle-ripple"></div>
+      <h1 class="loader">CYCLE</h1>
+    
+
+  </body>
+</html>

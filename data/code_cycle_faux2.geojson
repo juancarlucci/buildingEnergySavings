@@ -1,0 +1,285 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "15 - Smart and Final",
+        "mwhDesign": 70.48373809,
+        "mwhTarget": 68.97552769,
+        "mwhSavings": 1.508210399,
+        "autoOff": 0.14209768,
+        "daylighting": 0.815484209,
+        "fulladdress": "2525 N Texas St� Fairfield, 94533",
+        "Original_latitude": 38.2752386,
+        "Original_longitude": -122.0360094,
+        "powerAdjust": 0.55062851,
+        "lpd": 0,
+        "type": "Grocery store",
+        "address": "2525 N Texas St�",
+        "city": "Fairfield",
+        "state": "CA",
+        "zip": 94533,
+        "originDate": 1472244081599,
+        "origDate2": "239388078-09-28T04:51:43Z",
+        "timeURL": "{\"localDate\":\"Friday 26th August 2016 01:41:21 PM\",\"utcDate\":\"Friday 26th August 2016 08:41:21 PM\",\"format\":\"l jS F Y h:i:s A\",\"returnType\":\"json\",\"timestamp\":\"1472244081\",\"timezone\":\"America\\/Los_Angeles\",\"daylightSavingTime\":true,\"url\":\"http:\\/\\/www.convert-unix-time.com?t=1472244081\"}",
+        "dateFull": "Friday 26th August 2016 10:41:21 PM",
+        "cumulativeKwh": 2,
+        "designCity": "Seattle",
+        "designState": "WA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.02365221590787,
+          38.273540161565904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "15 - Planet Fitness",
+        "mwhDesign": 52.44833839,
+        "mwhTarget": 35.19144456,
+        "mwhSavings": 17.25689383,
+        "autoOff": 7.428669638,
+        "daylighting": 4.127152792,
+        "fulladdress": "2525 N Texas St, Fairfield, 94533",
+        "Original_latitude": 38.2749076,
+        "Original_longitude": -122.0359703,
+        "powerAdjust": 5.7010714,
+        "lpd": 0,
+        "type": "All other",
+        "address": "2525 N Texas St,",
+        "city": "Fairfield",
+        "state": "CA",
+        "zip": 94533,
+        "originDate": 1479256390569,
+        "origDate2": "33978597-03-28T04:42:25Z",
+        "timeURL": "{\"localDate\":\"Tuesday 15th November 2016 04:33:10 PM\",\"utcDate\":\"Wednesday 16th November 2016 12:33:10 AM\",\"format\":\"l jS F Y h:i:s A\",\"returnType\":\"json\",\"timestamp\":\"1479256390\",\"timezone\":\"America\\/Los_Angeles\",\"daylightSavingTime\":false,\"url\":\"http:\\/\\/www.convert-unix-time.com?t=1479256390\"}",
+        "dateFull": "Wednesday 16th November 2016 01:33:10 AM",
+        "cumulativeKwh": 19,
+        "designCity": "Houston",
+        "designState": "TX"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.05107609312203,
+          38.266117828079175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "15 - Unlimited Smiles AS 1510-0394",
+        "mwhDesign": 8.57486,
+        "mwhTarget": 5.538512013,
+        "mwhSavings": 3.036347987,
+        "autoOff": 1.85339474,
+        "daylighting": 0.442452837,
+        "fulladdress": "2501 Nut Tree Rd\" Vacaville, 95687",
+        "Original_latitude": 38.3350313,
+        "Original_longitude": -121.9537155,
+        "powerAdjust": 0.74050041,
+        "lpd": 0,
+        "type": "Medical buildings and clinic",
+        "address": "2501 Nut Tree Rd\"",
+        "city": "Vacaville",
+        "state": "CA",
+        "zip": 95687,
+        "originDate": 1479770070661,
+        "origDate2": "240020322-04-10T19:17:34Z",
+        "timeURL": "{\"localDate\":\"Monday 21st November 2016 03:14:30 PM\",\"utcDate\":\"Monday 21st November 2016 11:14:30 PM\",\"format\":\"l jS F Y h:i:s A\",\"returnType\":\"json\",\"timestamp\":\"1479770070\",\"timezone\":\"America\\/Los_Angeles\",\"daylightSavingTime\":false,\"url\":\"http:\\/\\/www.convert-unix-time.com?t=1479770070\"}",
+        "dateFull": "Tuesday 22nd November 2016 12:14:30 AM",
+        "cumulativeKwh": 22,
+        "designCity": "Newark",
+        "designState": "NJ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.94347208312634,
+          38.3490006279198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "15 - Saks Fifth Avenue",
+        "mwhDesign": 78.37253312,
+        "mwhTarget": 67.20509021,
+        "mwhSavings": 11.1674429,
+        "autoOff": 0,
+        "daylighting": 10.99086203,
+        "fulladdress": "1680 E Monte Vista Ave Vacaville, 95688",
+        "Original_latitude": 38.3698599,
+        "Original_longitude": -121.9591074,
+        "powerAdjust": 0.176580867,
+        "lpd": 0,
+        "type": "Retail and wholesale store",
+        "address": "1680 E Monte Vista Ave",
+        "city": "Vacaville",
+        "state": "CA",
+        "zip": 95688,
+        "originDate": 1484182724409,
+        "origDate2": "122333870-04-10T19:17:34Z",
+        "timeURL": "{\"localDate\":\"Wednesday 11th January 2017 04:58:44 PM\",\"utcDate\":\"Thursday 12th January 2017 12:58:44 AM\",\"format\":\"l jS F Y h:i:s A\",\"returnType\":\"json\",\"timestamp\":\"1484182724\",\"timezone\":\"America\\/Los_Angeles\",\"daylightSavingTime\":false,\"url\":\"http:\\/\\/www.convert-unix-time.com?t=1484182724\"}",
+        "dateFull": "Thursday 12th January 2017 01:58:44 AM",
+        "cumulativeKwh": 33,
+        "designCity": "Walnut Creek",
+        "designState": "CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.95950642351075,
+          38.38359160888401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "15 - Life Chiropractic",
+        "mwhDesign": 62.73715663,
+        "mwhTarget": 52.16680172,
+        "mwhSavings": 10.57035492,
+        "autoOff": 0,
+        "daylighting": 4.47425444,
+        "fulladdress": "210 Peabody Rd Vacaville, 95687",
+        "Original_latitude": 38.3501089,
+        "Original_longitude": -121.9766822,
+        "powerAdjust": 6.09610048,
+        "lpd": 0,
+        "type": "All other",
+        "address": "210 Peabody Rd",
+        "city": "Vacaville",
+        "state": "CA",
+        "zip": 95687,
+        "originDate": 1489431262324,
+        "origDate2": "246699769-11-17T04:51:43Z",
+        "timeURL": "{\"localDate\":\"Monday 13th March 2017 11:54:22 AM\",\"utcDate\":\"Monday 13th March 2017 06:54:22 PM\",\"format\":\"l jS F Y h:i:s A\",\"returnType\":\"json\",\"timestamp\":\"1489431262\",\"timezone\":\"America\\/Los_Angeles\",\"daylightSavingTime\":true,\"url\":\"http:\\/\\/www.convert-unix-time.com?t=1489431262\"}",
+        "dateFull": "Monday 13th March 2017 07:54:22 PM",
+        "cumulativeKwh": 44,
+        "designCity": "Chicago",
+        "designState": "IL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.9669642290238,
+          38.358113696445265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "15 - DD Discount",
+        "mwhDesign": 70.9495157,
+        "mwhTarget": 68.04238912,
+        "mwhSavings": 2.907126588,
+        "autoOff": 0,
+        "daylighting": 0.879717697,
+        "fulladdress": "2505 North Texas St. Fairfield, 94533",
+        "Original_latitude": 38.27526,
+        "Original_longitude": -122.035467,
+        "powerAdjust": 0,
+        "lpd": 2.027408891,
+        "type": "Retail and wholesale store",
+        "address": "2505 North Texas St.",
+        "city": "Fairfield",
+        "state": "CA",
+        "zip": 94533,
+        "originDate": 1489432094543,
+        "origDate2": "247532005-12-20T04:51:43Z",
+        "timeURL": "{\"localDate\":\"Monday 13th March 2017 12:08:14 PM\",\"utcDate\":\"Monday 13th March 2017 07:08:14 PM\",\"format\":\"l jS F Y h:i:s A\",\"returnType\":\"json\",\"timestamp\":\"1489432094\",\"timezone\":\"America\\/Los_Angeles\",\"daylightSavingTime\":true,\"url\":\"http:\\/\\/www.convert-unix-time.com?t=1489432094\"}",
+        "dateFull": "Monday 13th March 2017 08:08:14 PM",
+        "cumulativeKwh": 46,
+        "designCity": "Redmond",
+        "designState": "WA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.03648747251843,
+          38.26622624895278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "15 - Pawsh Place Vet ",
+        "mwhDesign": 23.62406249,
+        "mwhTarget": 17.30257364,
+        "mwhSavings": 6.321488848,
+        "autoOff": 4.34767746,
+        "daylighting": 0.225148156,
+        "fulladdress": "218 Dobbins Vacaville, 95688",
+        "Original_latitude": 38.3572342,
+        "Original_longitude": -121.9890381,
+        "powerAdjust": 0.270567458,
+        "lpd": 1.478095775,
+        "type": "All other",
+        "address": "218 Dobbins",
+        "city": "Vacaville",
+        "state": "CA",
+        "zip": 95688,
+        "originDate": 1494535596363,
+        "origDate2": "113020326-10-20T00:00:00Z",
+        "timeURL": "{\"localDate\":\"Thursday 11th May 2017 01:46:36 PM\",\"utcDate\":\"Thursday 11th May 2017 08:46:36 PM\",\"format\":\"l jS F Y h:i:s A\",\"returnType\":\"json\",\"timestamp\":\"1494535596\",\"timezone\":\"America\\/Los_Angeles\",\"daylightSavingTime\":true,\"url\":\"http:\\/\\/www.convert-unix-time.com?t=1494535596\"}",
+        "dateFull": "Thursday 11th May 2017 10:46:36 PM",
+        "cumulativeKwh": 53,
+        "designCity": "Cedar Rapids",
+        "designState": "IA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.00579924709956,
+          38.35922833342437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "15 - Pacific Dental",
+        "mwhDesign": 7.621488691,
+        "mwhTarget": 6.131341236,
+        "mwhSavings": 1.490147454,
+        "autoOff": 0.405652127,
+        "daylighting": 0.351453897,
+        "fulladdress": "671 Elmira Rd Vacaville, 95688",
+        "Original_latitude": 38.3517194,
+        "Original_longitude": -121.9497941,
+        "powerAdjust": 0.558223386,
+        "lpd": 0.174818044,
+        "type": "Medical buildings and clinic",
+        "address": "671 Elmira Rd",
+        "city": "Vacaville",
+        "state": "CA",
+        "zip": 95688,
+        "originDate": 1494875585174,
+        "origDate2": "226966166-01-01T00:00:00Z",
+        "timeURL": "{\"localDate\":\"Monday 15th May 2017 12:13:05 PM\",\"utcDate\":\"Monday 15th May 2017 07:13:05 PM\",\"format\":\"l jS F Y h:i:s A\",\"returnType\":\"json\",\"timestamp\":\"1494875585\",\"timezone\":\"America\\/Los_Angeles\",\"daylightSavingTime\":true,\"url\":\"http:\\/\\/www.convert-unix-time.com?t=1494875585\"}",
+        "dateFull": "Monday 15th May 2017 09:13:05 PM",
+        "cumulativeKwh": 54,
+        "designCity": "San Francisco",
+        "designState": "CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.94513339573604,
+          38.361890419073056
+        ]
+      }
+    }
+  ]
+}
