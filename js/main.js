@@ -336,10 +336,6 @@ var filterInput = document.getElementById('filter-input');
 }
 
 
-
-
-
-
    map.on('load', function(e) {
    // Add the data to your map as a layer
     map.addLayer({

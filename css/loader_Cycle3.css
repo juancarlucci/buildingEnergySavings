@@ -16,15 +16,15 @@ body {
           justify-content: center;
 }
 
-.loader h1 {
+#loaderText {
   text-align: center;
-  font-size: 2em;
+  font-size: 151px;
 }
 
 .circle-ripple {
   background-color: #fa4d10;
-  width: 1em;
-  height: 1em;
+  width: 4em;
+  height: 4em;
   border-radius: 50%;
   -webkit-animation: ripple 0.7s linear infinite;
           animation: ripple 0.7s linear infinite;
