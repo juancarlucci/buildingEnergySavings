@@ -2911,8 +2911,6 @@ var filterInput = document.getElementById('filter-input');
 
   function createPopUp(currentFeature) {
     var popUps = document.getElementsByClassName('mapboxgl-popup');
-    if (popUps[0]) popUps[0].remove();
-
     var prop = currentFeature.properties;
     var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat(currentFeature.geometry.coordinates)
