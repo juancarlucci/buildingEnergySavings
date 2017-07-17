@@ -11,14 +11,6 @@ $(document).ready(function() {
   }
   
 
-  // var colorList = [
-  //     [1.614, '#edf8fb'],
-  //     [100, '#bfd3e6'],
-  //     [500, '#9ebcda'],
-  //     [1000, '#8c96c6'],
-  //     [1800, '#8856a7']
-  // ];
-
   mapboxgl.accessToken = 'pk.eyJ1IjoianVhbmNhcmx1Y2NpIiwiYSI6ImNpdzZzcGgwZTAwMWUydHRjaXdnZ29yY3IifQ.OP_E0DFK0JcIb_CT81veqg';
 
 
@@ -2801,52 +2793,32 @@ var filterInput = document.getElementById('filter-input');
         },
           'circle-stroke-color': 'rgb(250,77,16)',
           'circle-stroke-width' : 1,
-          // "circle-opacity": 1,
           'circle-radius' : {
             property: 'mwhSavings',
             type: 'exponential',
             stops:  [
-            [{ "zoom": 9, "value": 1}, 2],
-            [{ "zoom": 9, "value": 1800 }, 15],
-            [{ "zoom": 10, "value": 1}, 4],
-            [{ "zoom": 10, "value": 1800}, 30],
-            [{ "zoom": 11, "value": 1 }, 8],
-            [{ "zoom": 11, "value": 1800 },60],
-            [{ "zoom": 12, "value": 1 }, 16],
-            [{ "zoom": 12, "value": 1800 }, 120],
-            [{ "zoom": 14, "value": 1 }, 20],
-            [{ "zoom": 14, "value": 1800}, 400]
-            
-        ]
+                        [{ "zoom": 9, "value": 0}, 0.5],
+                        [{ "zoom": 9, "value": 1}, 1.5],
+                        [{ "zoom": 9, "value": 1800 }, 15],
+                        [{ "zoom": 10, "value": 0}, 1],
+                        [{ "zoom": 10, "value": 1}, 3],
+                        [{ "zoom": 10, "value": 1800}, 30],
+                        [{ "zoom": 11, "value": 0 }, 2],
+                        [{ "zoom": 11, "value": 1 }, 6],
+                        [{ "zoom": 11, "value": 1800 },60],
+                        [{ "zoom": 12, "value": 0 }, 4],
+                        [{ "zoom": 12, "value": 1 }, 12],
+                        [{ "zoom": 12, "value": 1800 }, 120],
+                        [{ "zoom": 14, "value": 0 }, 16],
+                        [{ "zoom": 14, "value": 1 }, 48],
+                        [{ "zoom": 14, "value": 1800}, 400]  
+                    ]
 
         },
           'circle-opacity' : 0.8
         }
 
     });
-
-
-    // //test circle mouse over
-    // var circle = L.circle([-121.9537, 38.33], 1000, {
-    //   weight: 1,
-    //   fillColor: '#816996',
-    //   className: "test"
-    // }).
-    //   addTo(map).on({
-    //     "mouseover": function () {
-    //       circle.setStyle({
-    //         weight: 3,
-    //         fillColor: '#810f7c'
-    //       })
-    //     },
-    //     "mouseout": function () {
-    //       circle.setStyle({
-    //         weight: 1,
-    //         fillColor: '#bfd3e6'
-    //       })
-    //     }
-    //   });
-
 
 
   
@@ -2920,56 +2892,6 @@ var filterInput = document.getElementById('filter-input');
     }); //end map on click
 
 
-
-
-    // //When the mouse moves over a marker change the mouse cursor
-    // map.on("mousemove", function(e) {
-    //  //get the province feature underneath the mouse
-    //  var features = map.queryRenderedFeatures(e.point, {
-    //  layers: ["locations"]
-    //  });
-    //  //if there's a point under our mouse, then do the following.
-    //  if (features.length > 0) {
-    //  //use the following code to change the 
-    //  //cursor to a pointer ('pointer') instead of the default ('')
-    //  map.getCanvas().style.cursor = (features[0].properties.Name !== null) ? 'pointer' : '';
-    //  }
-    //  //if there are no points under our mouse, 
-    //  //then change the cursor back to the default
-    //  else {
-    //  map.getCanvas().style.cursor = '';
-    //  }
-    // });
-
-    // map.on('mouseenter', function(e) {
-    //   var features = map.queryRenderedFeatures(e.point, {
-    //     layers: ['locations']
-    //   });
-    //     // Change the cursor style as a UI indicator.
-    //     map.getCanvas().style.cursor = 'pointer';
-
-    //     // Populate the popup and set its coordinates
-    //     // based on the feature found.
-    //     // popup.setLngLat(e.features[0].geometry.coordinates)
-    //     //     .setHTML(e.features[0].properties.description)
-    //     //     .addTo(map);
-    // });
-
-    // map.on('mouseleave', 'locations', function() {
-    //     map.getCanvas().style.cursor = '';
-    //     // popup.remove();
-    // });
-
-   
-
-    // myLayer.setGeoJSON(buildings);
-    // myLayer.on('mouseover', function(e) {
-    //     e.layer.openPopup();
-    // });
-    // myLayer.on('mouseout', function(e) {
-    //     e.layer.closePopup();
-    // });
-
     map.on('mousemove', function(e) {
       var markers = map.queryRenderedFeatures(e.point, {
         layers: ['locations']
@@ -2978,13 +2900,6 @@ var filterInput = document.getElementById('filter-input');
       map.getCanvas().style.fillColor = (markers.length) ? 'red' : '';
 
     });
-
-
-
-
-
-
-
 
   
   function flyToBuilding(currentFeature) {
@@ -3207,12 +3122,6 @@ var filterInput = document.getElementById('filter-input');
     const arrayTimestamps = [];
     const rawPubDates = [];
     const arrayDateFull = [];
-    
-
-   
-    
-    
-    
     
     
     for (i=0; i<data.features.length; i++) {
