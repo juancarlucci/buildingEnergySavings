@@ -44,7 +44,8 @@ var filterInput = document.getElementById('filter-input');
     center: [-122., 38.3], 
     // initial zoom
     zoom: 11,
-    minZoom: 8
+    minZoom: 9,
+    maxZoom: 14
   });
 
 
