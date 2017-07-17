@@ -25,6 +25,7 @@ $(document).ready(function() {
     maxZoom: 14
   });
 
+
     var buildings = {
   "type": "FeatureCollection",
   "features": [
@@ -2826,13 +2827,10 @@ $(document).ready(function() {
 
       if (features.length) {
         var clickedPoint = features[0];
-        // 1. Fly to the point
-        // flyToBuilding(clickedPoint);
-
-        // 2. Close all other popups and display popup for clicked building
+        //1. Display popup for clicked building
         createPopUp(clickedPoint);
 
-        // 3. Clear chart canvas and Create listing chart
+        // 2. Clear chart canvas and Create listing chart
         $('#markerChart').parent().each(function() {
             //get child canvas id
             childCanvasId = $(this).find("canvas").attr('id');
@@ -2852,17 +2850,7 @@ $(document).ready(function() {
         layers: ['locations']
       });
       map.getCanvas().style.cursor = (markers.length) ? 'pointer' : '';
-      map.getCanvas().style.fillColor = (markers.length) ? 'red' : '';
-
     });
-
-  
-  function flyToBuilding(currentFeature) {
-    map.flyTo({
-        center: currentFeature.geometry.coordinates,
-        zoom: 12
-      }); 
-  }
 
   function createPopUp(currentFeature) {
     var popUps = document.getElementsByClassName('mapboxgl-popup');
@@ -2976,17 +2964,14 @@ $(document).ready(function() {
         });
       
     }
-     // console.log(sortedValues); // [1.490147454, 1.508210399, 2.907126588, 3.036347987, 6.321488848, 10.57035492, 11.1674429, 17.25689383]
      var total = sortedValues.reduce(function(sum, value) {
        return sum + value;
      }, 0);
-     // console.log(arrayCummulative); //[2, 19, 22, 33, 44, 46, 53, 54]
      var roundedTotal = round(total);
 
      displayTotal = document.getElementById("totalSavings");
 
      displayTotal.append(roundedTotal);
-     // displayTotal.append(arrayCummulative);
 
   } //end totalSavingsLegend
 
@@ -3002,9 +2987,7 @@ $(document).ready(function() {
         var currentFeature = data.features;
         arrayCummulative.push(currentFeature[i].properties.cumulativeKwh);
 
-
         arrayDateFull.push(currentFeature[i].properties.originSeconds);
-
 
         const pubDate = new Date(currentFeature[i].properties.originDate);
         // const weekday=new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
@@ -3014,8 +2997,6 @@ $(document).ready(function() {
                          monthname[pubDate.getMonth()] + ' '  + 
                          pubDate.getDate() + ', '  + 
                          pubDate.getFullYear();
-
-
 
         arrayTimestamps.push(formattedDate);
         rawPubDates.push(pubDate);
