@@ -11,13 +11,13 @@ $(document).ready(function() {
   }
   
 
-  var colorList = [
-      [1.614, '#edf8fb'],
-      [100, '#bfd3e6'],
-      [500, '#9ebcda'],
-      [1000, '#8c96c6'],
-      [1800, '#8856a7']
-  ];
+  // var colorList = [
+  //     [1.614, '#edf8fb'],
+  //     [100, '#bfd3e6'],
+  //     [500, '#9ebcda'],
+  //     [1000, '#8c96c6'],
+  //     [1800, '#8856a7']
+  // ];
 
   mapboxgl.accessToken = 'pk.eyJ1IjoianVhbmNhcmx1Y2NpIiwiYSI6ImNpdzZzcGgwZTAwMWUydHRjaXdnZ29yY3IifQ.OP_E0DFK0JcIb_CT81veqg';
 
@@ -2791,7 +2791,13 @@ var filterInput = document.getElementById('filter-input');
           'circle-color' : {
             property: 'mwhSavings',
             type: 'interval',
-            stops: colorList
+            stops: [
+                  [1.614, '#edf8fb'],
+                  [100, '#bfd3e6'],
+                  [500, '#9ebcda'],
+                  [1000, '#8c96c6'],
+                  [1800, '#8856a7']
+              ]
         },
           'circle-stroke-color': 'rgb(250,77,16)',
           'circle-stroke-width' : 1,
