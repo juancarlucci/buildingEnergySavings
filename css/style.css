@@ -71,7 +71,7 @@
          top: 42px;
          z-index: 1000;
          left: 260px;
-         width: 300px;
+         width: 400px;
          /*height: 750px;*/
          /*height: 100vh;*/
          margin-left: -250px;
@@ -85,15 +85,17 @@
            /*z-index: 100000;*/
         }
         .chart-container {
-         position: relative; 
-         height:192px; 
+         /*position: relative; */
+         /*height:192px; */
          width:100%;
+         margin-bottom: 40px;
         }
         #chart{
-         width: 300px;
-         height: 150px;
+         display: block;
+         /*width: 300px;*/
+         /*height: 250px;*/
          top: 20px;
-         right: 10px;
+         /*right: 10px;*/
         }
         #markerChartContainer {
           display: none;
