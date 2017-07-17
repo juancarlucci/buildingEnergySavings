@@ -2796,23 +2796,23 @@ var filterInput = document.getElementById('filter-input');
           'circle-radius' : {
             property: 'mwhSavings',
             type: 'exponential',
-            stops:  [
-                        [{ "zoom": 9, "value": 0}, 0.5],
-                        [{ "zoom": 9, "value": 1}, 1.5],
-                        [{ "zoom": 9, "value": 1800 }, 15],
-                        [{ "zoom": 10, "value": 0}, 1],
-                        [{ "zoom": 10, "value": 1}, 3],
-                        [{ "zoom": 10, "value": 1800}, 30],
-                        [{ "zoom": 11, "value": 0 }, 2],
-                        [{ "zoom": 11, "value": 1 }, 6],
-                        [{ "zoom": 11, "value": 1800 },60],
-                        [{ "zoom": 12, "value": 0 }, 4],
-                        [{ "zoom": 12, "value": 1 }, 12],
-                        [{ "zoom": 12, "value": 1800 }, 120],
-                        [{ "zoom": 14, "value": 0 }, 16],
-                        [{ "zoom": 14, "value": 1 }, 48],
-                        [{ "zoom": 14, "value": 1800}, 400]  
-                    ]
+              stops:  [
+                          [{ "zoom": 9, "value": 0}, 0.5],
+                          [{ "zoom": 9, "value": 1}, 1.5],
+                          [{ "zoom": 9, "value": 1800 }, 15],
+                          [{ "zoom": 10, "value": 0}, 1],
+                          [{ "zoom": 10, "value": 1}, 3],
+                          [{ "zoom": 10, "value": 1800}, 30],
+                          [{ "zoom": 11, "value": 0 }, 2],
+                          [{ "zoom": 11, "value": 1 }, 6],
+                          [{ "zoom": 11, "value": 1800 },60],
+                          [{ "zoom": 12, "value": 0 }, 4],
+                          [{ "zoom": 12, "value": 1 }, 12],
+                          [{ "zoom": 12, "value": 1800 }, 120],
+                          [{ "zoom": 14, "value": 0 }, 16],
+                          [{ "zoom": 14, "value": 1 }, 48],
+                          [{ "zoom": 14, "value": 1800}, 400]  
+                      ]
 
         },
           'circle-opacity' : 0.8
@@ -2853,7 +2853,7 @@ var filterInput = document.getElementById('filter-input');
       if (features.length) {
         var clickedPoint = features[0];
         // 1. Fly to the point
-        flyToBuilding(clickedPoint);
+        // flyToBuilding(clickedPoint);
 
         // 2. Close all other popups and display popup for clicked building
         createPopUp(clickedPoint);
