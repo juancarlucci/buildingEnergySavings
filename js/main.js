@@ -3201,6 +3201,8 @@ var filterInput = document.getElementById('filter-input');
     const arrayTimestamps = [];
     const rawPubDates = [];
     const arrayDateFull = [];
+    
+
    
     
     
@@ -3211,6 +3213,8 @@ var filterInput = document.getElementById('filter-input');
     
         var currentFeature = data.features;
         arrayCummulative.push(currentFeature[i].properties.cumulativeKwh);
+
+
         arrayDateFull.push(currentFeature[i].properties.originSeconds);
 
 
@@ -3232,15 +3236,20 @@ var filterInput = document.getElementById('filter-input');
         //       return a - b;
         //     });
     }
-    
+    var arrayDateFullMiliseconds = arrayDateFull.map(function(num) {
+      return num * 1000;
+    });
      // console.log(arrayCummulative);
      console.log(rawPubDates);
      console.log(arrayDateFull);
-     // console.log(arrayTimestamps);
+     console.log(arrayDateFullMiliseconds);
 
   
       var chart = c3.generate({
           bindto: '#chart',
+          title: { 
+              text: 'Cummulative MWh: 2015-2017'
+            },
           data: {
              
               x: 'x',
@@ -3248,8 +3257,8 @@ var filterInput = document.getElementById('filter-input');
               columns: [
                   // ['x',...arrayTimestamps],
                   // ['x', '2015-31-01', '2016-01-02', '2016-01-03', '2016-01-04', '2016-06-05', '2017-01-06'],
-                  ['x', ...arrayDateFull],
-                  ['Cummulative MWh: 2015-2017', ...arrayCummulative]
+                  ['x', ...arrayDateFullMiliseconds],
+                  ['Cummulative MWh: ', ...arrayCummulative]
               ],
               types: {
                       x :'timeseries',
@@ -3274,7 +3283,7 @@ var filterInput = document.getElementById('filter-input');
                 }
             },
             legend: {
-              hide: false
+              hide: true
               //or hide: 'data1'
               //or hide: ['data1', 'data2']
             },
