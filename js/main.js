@@ -2784,11 +2784,11 @@ var filterInput = document.getElementById('filter-input');
             property: 'mwhSavings',
             type: 'interval',
             stops: [
-                  [1.614, '#edf8fb'],
-                  [100, '#bfd3e6'],
-                  [500, '#9ebcda'],
-                  [1000, '#8c96c6'],
-                  [1800, '#8856a7']
+                 [0, '#edf8fb'],
+                 [0.5, '#bfd3e6'],
+                 [100, '#9ebcda'],
+                 [1000, '#8c96c6'],
+                 [2500, '#8856a7'] 
               ]
         },
           'circle-stroke-color': 'rgb(250,77,16)',
