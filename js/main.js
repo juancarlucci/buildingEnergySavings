@@ -2895,14 +2895,6 @@ $(document).ready(function() {
 
        var ctx = document.getElementById("markerChart").getContext("2d");
 
-      var gradientFill = ctx.createLinearGradient(0, 500, 100, 0);
-      gradientFill.addColorStop(0, "rgba(128, 182, 244, 0.6)");
-      gradientFill.addColorStop(1, "rgba(244, 144, 128, 0.6)");
-
-      var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
-      gradientStroke.addColorStop(0, "#80b6f4");
-      gradientStroke.addColorStop(1, "#f49080");
-
        var markerChart = new Chart(ctx, {
          type: 'bar',
          data: {
@@ -2914,7 +2906,6 @@ $(document).ready(function() {
                        round(prop.mwhTarget),
                         round(prop.mwhSavings)],
                  backgroundColor: 
-                 // gradientFill,
                  [
                      '#bfd3e6',
                      '#9ebcda',
@@ -2923,15 +2914,8 @@ $(document).ready(function() {
                      '#810f7c',
                      '#816996'
                  ],
-                 borderColor: gradientStroke,
-                 // [
-                 //     '#627896',
-                 //     '#627896',
-                 //     '#627896',
-                 //     '#627896',
-                 //     '#627896',
-                 //     '#627896'
-                 // ],
+                 borderColor: 'rgb(250,77,16)',
+                
                  borderWidth: 0.5
              }]
          },
