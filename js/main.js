@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
  // This will let you use the .remove() function later on
   if (!('remove' in Element.prototype)) {
     Element.prototype.remove = function() {
@@ -10,28 +9,14 @@ $(document).ready(function() {
     };
   }
   
-
   mapboxgl.accessToken = 'pk.eyJ1IjoianVhbmNhcmx1Y2NpIiwiYSI6ImNpdzZzcGgwZTAwMWUydHRjaXdnZ29yY3IifQ.OP_E0DFK0JcIb_CT81veqg';
-
-
-//FILTER
-var layerIDs = []; // Will contain a list used to filter against.
-var filterInput = document.getElementById('filter-input');
-
-
-
-
 
   // This adds the map
   var map = new mapboxgl.Map({
     // container id specified in the HTML
     container: 'map', 
     // style URL
-    // style: 'mapbox://styles/juancarlucci/cj4ixk05q1a3x2spb44qq9cy3',
-    // style: 'mapbox://styles/mapbox/light-v9' ,
     style: 'mapbox://styles/juancarlucci/cj4zwt62c14mj2socoo25r76v',
-
-    
     // initial position in [long, lat] format
     center: [-122., 38.3], 
     // initial zoom
@@ -39,7 +24,6 @@ var filterInput = document.getElementById('filter-input');
     minZoom: 9,
     maxZoom: 14
   });
-
 
     var buildings = {
   "type": "FeatureCollection",
@@ -2767,7 +2751,6 @@ var filterInput = document.getElementById('filter-input');
   ]
 }
 
-
    map.on('load', function(e) {
    // Add the data as a layer
     map.addLayer({
@@ -2820,19 +2803,10 @@ var filterInput = document.getElementById('filter-input');
 
     });
 
-
-  
-    //initialize search
-    // searchBuildings(buildings);
-    //Initialize legend
-    // buildLegendList(buildings);
     totalSavingsLegend(buildings);
-    // Initialize building list
-    buildLocationList(buildings);
-    // buildTotalsLegend(buildings);
+   
 
     createLineChart(buildings);
-    // formatDate(buildings);
 
 
     // Add zoom and rotation controls to the map.
@@ -2869,25 +2843,6 @@ var filterInput = document.getElementById('filter-input');
           });
       
         updateListingChart(clickedPoint);
-     
-
-        // 4. Highlight listing in sidebar (and remove highlight for all other listings)
-       var activeItem = document.getElementsByClassName('active');
-        if (activeItem[0]) {
-          activeItem[0].classList.remove('active');
-        }
-
-        var selectedFeature = clickedPoint.properties.address;
-        
-        for (var i = 0; i < buildings.features.length; i++ ) {
-          if (buildings.features[i].properties.address === selectedFeature) {
-              selectedFeatureIndex = i;
-          }
-        }
-
-        var listing = document.getElementById('listing-' + selectedFeatureIndex);
-        listing.classList.add('active');
-
       }
     }); //end map on click
 
@@ -3010,70 +2965,6 @@ var filterInput = document.getElementById('filter-input');
   } //end updateListingChart
 
 
-  
- 
-  function buildLocationList(data) {
-    for (i = 0; i < data.features.length; i++) {
-      // Create an array of all the buildings and their properties
-      var currentFeature = data.features[i];
-      // Shorten data.feature.properties to `prop`
-      var prop = currentFeature.properties;
-      // Select the listing container in the HTML
-      var listings = document.getElementById('listings');
-      // Append a div with the class 'item' for each building 
-      var listing = listings.appendChild(document.createElement('div'));
-      listing.className = 'item';
-      listing.id = "listing-" + i;
-
-      // Create a new link with the class 'title' for each building 
-      // and fill it with the Building name
-      var link = listing.appendChild(document.createElement('a'));
-      link.href = '#';
-      link.className = 'title';
-      link.dataPosition = i;
-      link.innerText = prop.name;
-
-      var savings = listing.appendChild(document.createElement('div'));
-      // details.innerText = prop.city;
-      savings.innerText = 'kwh savings: ' + round(prop.mwhSavings);
-
-      // Create a new div with the class 'details' for each Building 
-      // and fill it with the city and phone number
-      var details = listing.appendChild(document.createElement('div'));
-      // details.innerText = prop.city;
-      details.innerText = prop.city;
-
-  
-      
-
-
-      link.addEventListener('click', function(e) {
-        // Update the currentFeature to the Building associated with the clicked link
-        var clickedListing = data.features[this.dataPosition];
-
-        // 1. Fly to the point associated with the clicked link
-        flyToBuilding(clickedListing);
-
-        // 2. Close all other popups and display popup for clicked building
-        createPopUp(clickedListing);
-
-        //3. Create new chart for clicked listing
-        // updateListingChart(clickedListing);
-
-        // 4. Highlight listing in sidebar (and remove highlight for all other listings)
-        var activeItem = document.getElementsByClassName('active');
-
-        if (activeItem[0]) {
-          activeItem[0].classList.remove('active');
-        }
-        this.parentNode.classList.add('active');
-
-      });
-    }
-
-
-
-  } //end buildLocationList
     
   function calcPropRadius(attributeValue) {
 
@@ -3144,42 +3035,27 @@ var filterInput = document.getElementById('filter-input');
 
         arrayTimestamps.push(formattedDate);
         rawPubDates.push(pubDate);
-
-        // var sortedDates = arrayTimestamps.sort(function(a, b) {
-        //       return a - b;
-        //     });
     }
     var arrayDateFullMiliseconds = arrayDateFull.map(function(num) {
       return num * 1000;
     });
-     // console.log(arrayCummulative);
-     console.log(rawPubDates);
-     console.log(arrayDateFull);
-     console.log(arrayDateFullMiliseconds);
 
-  
       var chart = c3.generate({
           bindto: '#chart',
           title: { 
               text: 'Cummulative MWh: 2015-2017'
             },
           data: {
-             
               x: 'x',
-              //        xFormat: '%Y%m%d', // 'xFormat' can be used as custom format of 'x'
               columns: [
-                  // ['x',...arrayTimestamps],
-                  // ['x', '2015-31-01', '2016-01-02', '2016-01-03', '2016-01-04', '2016-06-05', '2017-01-06'],
                   ['x', ...arrayDateFullMiliseconds],
                   ['Cummulative MWh: ', ...arrayCummulative]
               ],
               types: {
                       x :'timeseries',
                     }
-            
               // labels: true //shows point values
           },
-        
             axis: {
                 x: {
                     show: false,
@@ -3188,17 +3064,9 @@ var filterInput = document.getElementById('filter-input');
                         format: '%m-%Y'
                     }
                 },
-                y: {
-                    show: true
-                    // tick: {
-                      
-                    // }
-                }
             },
             legend: {
               hide: true
-              //or hide: 'data1'
-              //or hide: ['data1', 'data2']
             },
             grid: {
               x: {
@@ -3213,11 +3081,7 @@ var filterInput = document.getElementById('filter-input');
                 x: '#810f7c'
               }
       }); //end c3 chart
-
-      
-
   } //end createLineChart
-
 
 
 function getRandomInRange(from, to, fixed) {
@@ -3226,7 +3090,7 @@ function getRandomInRange(from, to, fixed) {
 }
 
 //getRandomInRange(-180, 180, 3)
-const randomsuffix = getRandomInRange(0.01450, 0.04900, 5);
+const randomsuffix = getRandomInRange(-0.017, 0.017, 4);
 console.log(randomsuffix);
 
 function generateRandomizedCoordinates(data) {
