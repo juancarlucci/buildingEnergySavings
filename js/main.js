@@ -26,13 +26,12 @@ $(document).ready(function() {
   });
 
 
-    var buildings = {
+var buildings = {
   "type": "FeatureCollection",
   "features": [
     {
       "type": "Feature",
       "properties": {
-        "name": "10 - Dental Office AS BIT15-007780",
         "id": "a8ef48121-9b3c-4c0b-abf2-900f65375777",
         "mwhDesign": 75.03,
         "mwhTarget": 71.62,
@@ -64,7 +63,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "15 - Saks Fifth Avenue",
         "id": "a9d7b9e93-ffa3-4f29-bd30-8def6da9863b-35b71af0-6ed5-11e5-b617-6fcf5338786d-5ff7e120-6ed8-11e5-b617-6fcf5338786d",
         "mwhDesign": 1175.59,
         "mwhTarget": 1008.08,
@@ -96,7 +94,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "15 - ATT Retail 1507-0002",
         "id": "a69a498fd-ab20-4728-a16b-4cd618812cf9-cf5811b0-7078-11e5-b617-6fcf5338786d",
         "mwhDesign": 184.71,
         "mwhTarget": 181.69,
@@ -128,7 +125,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "10 - BioRad TI AS",
         "id": "a96b0414b-1a64-496f-9e96-ce2157a27023-e77e7320-8eef-11e5-ade5-6fcf5338786d",
         "mwhDesign": 595.6,
         "mwhTarget": 512.42,
@@ -160,7 +156,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "10 - Empire-Solano Foundation ",
         "id": "a43e6696c-0ec5-4515-909c-57d8a78da55b",
         "mwhDesign": 47.24,
         "mwhTarget": 47.24,
@@ -192,7 +187,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "15 - Pawsh Place Vet ",
         "id": "a840b2acc-d927-48c9-8849-e3ce0a579505",
         "mwhDesign": 354.36,
         "mwhTarget": 259.54,
@@ -224,7 +218,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "10 - Access Dental AS",
         "id": "aebf6c80d-e03e-45a0-98bc-c320ee778b2b",
         "mwhDesign": 51.57,
         "mwhTarget": 47.57,
@@ -256,7 +249,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "15 - Smart and Final",
         "id": "a7c06536c-1eef-4f7a-9052-4aa0a110607b",
         "mwhDesign": 1057.26,
         "mwhTarget": 1034.63,
@@ -288,7 +280,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "15 - DD Discount",
         "id": "ac4a07431-39ea-4f84-90f3-9bb564300cf9-7b889a70-83fe-11e5-a9a2-6fcf5338786d",
         "mwhDesign": 1145.99,
         "mwhTarget": 1020.64,
@@ -320,7 +311,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "15 - Planet Fitness",
         "id": "a83557529-1569-4365-b3eb-2ce4d6bbec69",
         "mwhDesign": 786.73,
         "mwhTarget": 527.87,
@@ -352,7 +342,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "15 - Focus Day Program",
         "id": "a16ef1833-212b-4841-9115-53ba4a0a882d",
         "mwhDesign": 169.54,
         "mwhTarget": 126.73,
@@ -384,7 +373,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "15 - Life Chiropractic",
         "id": "aeeed6e0a-94a0-4f85-a1f5-1626448b814e",
         "mwhDesign": 941.06,
         "mwhTarget": 782.5,
@@ -416,7 +404,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "15 - Box 2nd Floor",
         "id": "a32cad6b5-a884-457f-97f2-528291bebe8c",
         "mwhDesign": 1036.45,
         "mwhTarget": 1022.46,
@@ -448,7 +435,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "10 - RockinJump AS 1511-0042",
         "id": "a436e3f35-6d67-409f-b785-6734f0d777a1",
         "mwhDesign": 490.72,
         "mwhTarget": 488.76,
@@ -480,7 +466,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "15 - Unlimited Smiles AS 1510-0394",
         "id": "a8d4b5040-2cb6-4736-888c-2a6fd2e8ee7b",
         "mwhDesign": 127.22,
         "mwhTarget": 83.08,
@@ -512,7 +497,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "10 - Starbucks",
         "id": "a96aed74e-e3e6-4927-a0be-904e5bd07468",
         "mwhDesign": 134.87,
         "mwhTarget": 131.19,
@@ -544,7 +528,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "15 - Pacific Dental",
         "id": "a74c98e4f-028e-411b-8343-2be00c00b0a8",
         "mwhDesign": 114.32,
         "mwhTarget": 91.97,
@@ -576,7 +559,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Dr VARDAY AS 47",
         "id": "a0a2e88c4-e058-4e14-9e6f-42fac23cdb40",
         "mwhDesign": 41.21,
         "mwhTarget": 41.21,
@@ -608,7 +590,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Chabad Church AS",
         "id": "a602bcf0d-e531-4108-ae9d-0d2a5b0d8464-bd50f340-64c6-11e6-bbe6-83172005af47",
         "mwhDesign": 356.8,
         "mwhTarget": 231.45,
@@ -640,7 +621,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Iglesia Ni Cristo Church AS",
         "id": "ab874a263-d986-43c4-9420-f03140e23680-0e610e50-64c7-11e6-bbe6-83172005af47",
         "mwhDesign": 390.94,
         "mwhTarget": 325.97,
@@ -672,7 +652,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "ACX Global AS",
         "id": "aa6703776-f24f-48f9-b2a8-cffa46ca609a-fc0e9a60-75d8-11e6-b608-d1489a62d951",
         "mwhDesign": 35.56,
         "mwhTarget": 31.98,
@@ -704,7 +683,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Round Table AS",
         "id": "a1d0c9889-0a76-4d9a-94ee-3b3ca8bcbb3b-6450dc60-76c3-11e6-b608-d1489a62d951",
         "mwhDesign": 341.01,
         "mwhTarget": 239.14,
@@ -736,7 +714,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "The Looking Glass AS",
         "id": "a5edb2ae4-1bd8-4a18-9436-160a808a10a8-1538b110-7610-11e6-b608-d1489a62d951",
         "mwhDesign": 174.92,
         "mwhTarget": 107.08,
@@ -768,7 +745,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Starbucks AS 47",
         "id": "adacb9425-ad76-499a-9bd2-d8a71932d488",
         "mwhDesign": 93.72,
         "mwhTarget": 93.72,
@@ -800,7 +776,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Million Thai Cuisine AS",
         "id": "a91e959cb-c18c-465d-9e2a-0ce23e957d7c-acdc7640-83fe-11e6-9285-92ede09a7dc3",
         "mwhDesign": 61.6,
         "mwhTarget": 39.45,
@@ -832,7 +807,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Jelly Belly AS",
         "id": "a355e80e0-2f71-4d24-90b2-cecc1e409047-b8d97dc0-85a8-11e6-b9ef-4d725dfa7ee9",
         "mwhDesign": 1350.34,
         "mwhTarget": 1350.34,
@@ -864,7 +838,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "AAA AS",
         "id": "a243a027b-9a15-4711-904e-6dcd63f5a9bf",
         "mwhDesign": 121.24,
         "mwhTarget": 121.24,
@@ -896,7 +869,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "El Pollo Loco AS",
         "id": "a8d4c3ef1-2686-4f73-826a-6d09e1f7b405",
         "mwhDesign": 60.66,
         "mwhTarget": 60.66,
@@ -928,7 +900,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "PGE Training Room Upgrade AS",
         "id": "ad5fafa7b-d7d7-4785-a124-cd4c5a396e48",
         "mwhDesign": 223.44,
         "mwhTarget": 117.82,
@@ -960,7 +931,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Leisure Town Storage AS",
         "id": "a71c48827-acfd-4950-8cd1-dfd72f0549b8",
         "mwhDesign": 805.48,
         "mwhTarget": 697.01,
@@ -992,7 +962,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Chevron Strip Mall TI AS 47",
         "id": "a2d6966d8-691a-4faa-adf5-9bc6835639be",
         "mwhDesign": 105.57,
         "mwhTarget": 105.57,
@@ -1024,7 +993,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Fathers House AS",
         "id": "af1ecd745-19c2-4e14-b570-3d0a0cce9900",
         "mwhDesign": 206.6,
         "mwhTarget": 206.6,
@@ -1056,7 +1024,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "KFC Georgia AS",
         "id": "ad1c38aca-46b9-4d29-8a91-4e1d18e4e61a",
         "mwhDesign": 148.46,
         "mwhTarget": 72.55,
@@ -1088,7 +1055,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Pushups2Pinups AS",
         "id": "a4ee975ff-6d79-46da-95e9-bfe849fa34ae",
         "mwhDesign": 365.79,
         "mwhTarget": 255.45,
@@ -1120,7 +1086,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Walmart AS",
         "id": "a4afa545e-05f9-405b-9f02-eca66de22424",
         "mwhDesign": 64.75,
         "mwhTarget": 63.4,
@@ -1152,7 +1117,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "KFC Redwood AS",
         "id": "ab38a37f2-1f9f-419a-a839-b3420e5ff35e",
         "mwhDesign": 192.38,
         "mwhTarget": 81,
@@ -1184,7 +1148,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "BeFit Credit Union AS",
         "id": "a070442f4-a049-4534-87e8-40acb14fee50-6a138660-9d39-11e6-ae60-4d725dfa7ee9",
         "mwhDesign": 81.59,
         "mwhTarget": 66.31,
@@ -1216,7 +1179,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Kelly Moore AS",
         "id": "a7c67c754-187f-44be-bf97-7d0017e38ff2",
         "mwhDesign": 130.37,
         "mwhTarget": 130.37,
@@ -1248,7 +1210,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Quick Lane Auto AS",
         "id": "a65e38da3-70fb-4282-96b3-9d961e32ea5b-17d4f110-ae8a-11e6-94d0-4d725dfa7ee9",
         "mwhDesign": 238.75,
         "mwhTarget": 173.82,
@@ -1280,7 +1241,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Savage Cooke Distillery 65 11-15-16",
         "id": "aee52ebe0-49ab-47a6-87f1-ab0452fb438c-aeb10df0-abb8-11e6-9298-4d725dfa7ee9",
         "mwhDesign": 187.02,
         "mwhTarget": 183.51,
@@ -1312,7 +1272,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Savage Cooke Distillery 45 11-22-16",
         "id": "abd1f4eb3-056c-429b-91a1-2c1f4260c2ab-894e4a20-b0d9-11e6-8cd1-4d725dfa7ee9",
         "mwhDesign": 100.28,
         "mwhTarget": 100.28,
@@ -1344,7 +1303,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Skechers AS 47 Corrected",
         "id": "aecc00fb9-4077-4e76-beeb-93f9ce8602c6-d295dfd0-c2dc-11e6-9656-4d725dfa7ee9",
         "mwhDesign": 619.27,
         "mwhTarget": 533.19,
@@ -1376,7 +1334,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Homewood Suites AS",
         "id": "ae4ad95fa-e1d9-4771-81ae-1d34398694b4-56a1f190-baa6-11e6-9656-4d725dfa7ee9",
         "mwhDesign": 336.72,
         "mwhTarget": 133.72,
@@ -1408,7 +1365,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Staybridge Suites AS",
         "id": "a31767a13-67a4-46df-8161-83a4a3b2b699",
         "mwhDesign": 274.64,
         "mwhTarget": 196.83,
@@ -1440,7 +1396,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Batteries Plus Bulbs AS",
         "id": "a94dc7575-ac37-49e3-9cee-5784db9eb6c0",
         "mwhDesign": 67.32,
         "mwhTarget": 67.32,
@@ -1472,7 +1427,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Restoration Hardware AS",
         "id": "a41508501-cb2f-494e-a805-9b79a7b46d33",
         "mwhDesign": 2262.39,
         "mwhTarget": 2262.39,
@@ -1504,7 +1458,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Caliber Collision Shop Area AS",
         "id": "a28b1b2e2-96f8-4ad4-8081-86d4251b9132",
         "mwhDesign": 741.78,
         "mwhTarget": 288.81,
@@ -1536,7 +1489,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Caliber Collision Office AS",
         "id": "af29e296f-183b-469e-93eb-f8437684454d",
         "mwhDesign": 66.78,
         "mwhTarget": 64.57,
@@ -1568,7 +1520,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "First Northern Bank AS",
         "id": "abb19f75f-433d-40ac-81c1-3ad7468def47",
         "mwhDesign": 166.63,
         "mwhTarget": 166.63,
@@ -1600,7 +1551,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "SCIF AS",
         "id": "a2cfc0c09-dcd1-4f60-9711-bea9e11668d5",
         "mwhDesign": 947.63,
         "mwhTarget": 932.82,
@@ -1632,7 +1582,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Dick's Sporting Goods AS",
         "id": "add819626-a1c3-4205-9be8-12c08e80b2e5",
         "mwhDesign": 2926.27,
         "mwhTarget": 2922.81,
@@ -1664,7 +1613,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Sephora AS",
         "id": "afdb8f93b-3f7b-4095-96b2-298b559237a8",
         "mwhDesign": 291.54,
         "mwhTarget": 291.54,
@@ -1696,7 +1644,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "America's Tire AS",
         "id": "aaf4fb2d3-9a24-4a07-9562-e7e631fccbfa",
         "mwhDesign": 384.89,
         "mwhTarget": 291.15,
@@ -1728,7 +1675,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "T-Mobile AS",
         "id": "a736c6074-8981-4299-b778-4d101fa7dae8",
         "mwhDesign": 153.74,
         "mwhTarget": 147.39,
@@ -1760,7 +1706,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Cirrus Logic AS",
         "id": "a1e4bad9b-704d-41f4-9b23-5a56408d2d4b",
         "mwhDesign": 188.92,
         "mwhTarget": 179.91,
@@ -1792,7 +1737,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "FF Montessori Preschool AS",
         "id": "a898f2be4-e9af-4c75-8346-f25f48698e4d",
         "mwhDesign": 429.22,
         "mwhTarget": 406.68,
@@ -1824,7 +1768,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Pacific Cycle AS",
         "id": "ac69b015c-157d-4ef9-85bd-95af5136c514",
         "mwhDesign": 2886.25,
         "mwhTarget": 2886.25,
@@ -1856,7 +1799,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Hop-n-Play AS",
         "id": "aadb90ec2-b5fb-43a3-99cf-4043c643a9a4",
         "mwhDesign": 285.45,
         "mwhTarget": 262.44,
@@ -1888,7 +1830,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Hyatt Vacaville AS",
         "id": "ae6912fd5-42f4-4d67-a0d7-2ea7ea045161-d99632",
         "mwhDesign": 986.52,
         "mwhTarget": 937.5,
@@ -1920,7 +1861,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "University of Beer AS",
         "id": "a9694a679-f464-4d2f-a354-d8b10c8a9d75",
         "mwhDesign": 118.76,
         "mwhTarget": 113.47,
@@ -1952,7 +1892,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Geovera AS Copy",
         "id": "a08544f6e-546b-4d8b-9caa-98a29a29f217-d06644",
         "mwhDesign": 215.68,
         "mwhTarget": 174.86,
@@ -1984,7 +1923,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Pizza Hut AS",
         "id": "a5e4dc456-a278-4c32-b3ca-25d1299f3b91",
         "mwhDesign": 124.23,
         "mwhTarget": 118.68,
@@ -2016,7 +1954,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "G&C Auto Body AS",
         "id": "a2b438511-f8e8-4632-8588-d338ac19f85e",
         "mwhDesign": 375.96,
         "mwhTarget": 289.36,
@@ -2048,7 +1985,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Berlin Pkg - Shipping Office AS",
         "id": "ab6c82028-18db-4232-b7e5-c22a73d0eab3",
         "mwhDesign": 213.81,
         "mwhTarget": 213.81,
@@ -2080,7 +2016,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Travis Credit Union AS",
         "id": "a48a99e3f-50ec-4c25-a7b0-7cfc7520c87e",
         "mwhDesign": 252.3,
         "mwhTarget": 243.6,
@@ -2112,7 +2047,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Aldo AS 5-9-17",
         "id": "a97b3cf90-8196-4617-b20e-338f5120d693-d23165",
         "mwhDesign": 301.47,
         "mwhTarget": 301.47,
@@ -2144,7 +2078,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Aldo AS",
         "id": "a97b3cf90-8196-4617-b20e-338f5120d693",
         "mwhDesign": 301.47,
         "mwhTarget": 301.47,
@@ -2176,7 +2109,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Clay Oven Grill & Bar AS",
         "id": "a81da38f2-3039-483b-8b3b-9a3ade83d455",
         "mwhDesign": 264.91,
         "mwhTarget": 238.35,
@@ -2208,7 +2140,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "River2Sea AS",
         "id": "abfe6fd5e-3e6f-4f2a-89bd-39e163a8a02f",
         "mwhDesign": 28.08,
         "mwhTarget": 28.08,
@@ -2240,7 +2171,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Paradise Valley Financial AS",
         "id": "a2b0f18f3-d4ea-4ae9-8907-63464051b522",
         "mwhDesign": 87.39,
         "mwhTarget": 87.39,
@@ -2272,7 +2202,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "PG&E Lighting Upgrade AS",
         "id": "a8a875a89-c50e-4745-a533-1f7eef6aabb0",
         "mwhDesign": 556.12,
         "mwhTarget": 556.12,
@@ -2304,7 +2233,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "N Bay ORX Clinic AS",
         "id": "acc66bc0d-f69c-4427-87ed-61de9bce9071",
         "mwhDesign": 943.07,
         "mwhTarget": 886.58,
@@ -2336,7 +2264,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Sourdough & Co AS",
         "id": "ad4fae20f-71bb-451b-8e75-7794c21e2695",
         "mwhDesign": 109.05,
         "mwhTarget": 94.58,
@@ -2368,7 +2295,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Nordstrom Rack AS",
         "id": "a6735c9a5-1a44-4b89-88ae-e656cdb990f1",
         "mwhDesign": 2303.41,
         "mwhTarget": 2299.11,
@@ -2400,7 +2326,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Reebok AS",
         "id": "a19e0a6fe-33d2-492c-bb56-de64fe280d60",
         "mwhDesign": 614.84,
         "mwhTarget": 614.84,
@@ -2432,7 +2357,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Under Armour AS",
         "id": "a184f1b71-60aa-4169-af9e-5df7ad7240c9",
         "mwhDesign": 919.33,
         "mwhTarget": 919.33,
@@ -2464,7 +2388,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "St. Timothy's Church AS",
         "id": "a0754541e-b648-4c62-8c6e-59629974b8ed",
         "mwhDesign": 308.65,
         "mwhTarget": 301.25,
@@ -2496,7 +2419,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Amar Indian Restaurant AS",
         "id": "aac60ffd0-bc6c-489a-bb50-6c63936fd8dd",
         "mwhDesign": 267.32,
         "mwhTarget": 202.85,
@@ -2528,7 +2450,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "300 Crocker Work Floor AS",
         "id": "a7ddd61de-d517-4997-9d86-840f4ffd0f70",
         "mwhDesign": 17756.51,
         "mwhTarget": 15936.88,
@@ -2560,7 +2481,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "300 Crocker - Small Conditioned AS",
         "id": "a20fc223d-415b-435b-a117-ba04b8f23e3a",
         "mwhDesign": 731.04,
         "mwhTarget": 690.91,
@@ -2592,7 +2512,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "PlayLive AS",
         "id": "a57060f23-d2c7-48cc-a7ed-193cd4c9419f",
         "mwhDesign": 143.91,
         "mwhTarget": 116.71,
@@ -2624,7 +2543,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Dutch Brothers Coffee AS",
         "id": "a6132a2a4-635b-42d4-a73c-146898a26e9e",
         "mwhDesign": 50.91,
         "mwhTarget": 43.37,
@@ -2656,7 +2574,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Rock and Brew AS",
         "id": "abb7c3695-50b3-4622-abaf-45f675a3c4b4",
         "mwhDesign": 577.01,
         "mwhTarget": 566.69,
@@ -2688,7 +2605,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Geovera Ph II AS",
         "id": "a8924af5c-8ac5-4353-85db-c203ea20723a",
         "mwhDesign": 155.84,
         "mwhTarget": 150.46,
@@ -2720,7 +2636,6 @@ $(document).ready(function() {
     {
       "type": "Feature",
       "properties": {
-        "name": "Pandora AS",
         "id": "a7b0d7379-9045-4a23-8851-42c4c3f34f66",
         "mwhDesign": 180.06,
         "mwhTarget": 176.66,
