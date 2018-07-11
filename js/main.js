@@ -55,8 +55,8 @@ var buildings = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.9455058,
-          38.39546527
+          -121.933007,
+          38.391660
         ]
       }
     },
