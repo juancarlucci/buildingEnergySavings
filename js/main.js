@@ -32,6 +32,37 @@ var buildings = {
     {
       "type": "Feature",
       "properties": {
+        "id": "a7ddd61de-d517-4997-9d86-840f4ffd0f70",
+        "mwhDesign": 17756.51,
+        "mwhTarget": 15936.88,
+        "mwhSavings": 1819.63,
+        "autoOff": 0,
+        "daylighting": 1819.63,
+        "powerAdjust": 0,
+        "lpd": 0,
+        "type": "Commercial and industrial work bldgs",
+        "address": "300 Crocker",
+        "city": "Vacaville",
+        "state": "CA",
+        "zip": 95688,
+        "originDate": "1.49739E+12",
+        "originSeconds": 1497392860,
+        "cumulativeKwh": 5217.12,
+        "designCity": "",
+        "designState": "",
+        "area": 299375.84
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.9455058,
+          38.39546527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": "a8ef48121-9b3c-4c0b-abf2-900f65375777",
         "mwhDesign": 75.03,
         "mwhTarget": 71.62,
@@ -2630,37 +2661,6 @@ var buildings = {
         "coordinates": [
           -122.059421,
           38.26230307
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "a7ddd61de-d517-4997-9d86-840f4ffd0f70",
-        "mwhDesign": 17756.51,
-        "mwhTarget": 15936.88,
-        "mwhSavings": 1819.63,
-        "autoOff": 0,
-        "daylighting": 1819.63,
-        "powerAdjust": 0,
-        "lpd": 0,
-        "type": "Commercial and industrial work bldgs",
-        "address": "300 Crocker",
-        "city": "Vacaville",
-        "state": "CA",
-        "zip": 95688,
-        "originDate": "1.49739E+12",
-        "originSeconds": 1497392860,
-        "cumulativeKwh": 5217.12,
-        "designCity": "",
-        "designState": "",
-        "area": 299375.84
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.9455058,
-          38.39546527
         ]
       }
     }
