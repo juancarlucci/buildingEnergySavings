@@ -27,7 +27,7 @@ $(document).ready(function() {
 
    map.on('load', function(e) {
 
-   var sortedBySavings = buildings.features.sort((a, b) => a.properties.mwhSavings < b.properties.mwhSavings);
+   var sortedBySavings = buildings.features.sort((a, b) => b.properties.mwhSavings - a.properties.mwhSavings);
    //need this for proper GeoJSON formatting
    sortedBySavings = {type: "FeatureCollection", features: sortedBySavings};
 
