@@ -8,17 +8,17 @@ $(document).ready(function() {
       }
     };
   }
-  
+
   mapboxgl.accessToken = 'pk.eyJ1IjoianVhbmNhcmx1Y2NpIiwiYSI6ImNpdzZzcGgwZTAwMWUydHRjaXdnZ29yY3IifQ.OP_E0DFK0JcIb_CT81veqg';
 
   // This adds the map
   var map = new mapboxgl.Map({
     // container id specified in the HTML
-    container: 'map', 
+    container: 'map',
     // style URL
     style: 'mapbox://styles/juancarlucci/cj4zwt62c14mj2socoo25r76v',
     // initial position in [long, lat] format
-    center: [-122., 38.3], 
+    center: [-122., 38.3],
     // initial zoom
     zoom: 11,
     minZoom: 9,
@@ -26,15 +26,19 @@ $(document).ready(function() {
   });
 
    map.on('load', function(e) {
-   // Add the data as a layer
+
+   var sortedBySavings = buildings.features.sort((a, b) => a.properties.mwhSavings < b.properties.mwhSavings);
+   //need this for proper GeoJSON formatting
+   sortedBySavings = {type: "FeatureCollection", features: sortedBySavings};
+
+    // Add the data as a layer
     map.addLayer({
       id: 'locations',
       type: 'circle',
       // Add a GeoJSON source containing place coordinates and information.
       source: {
         type: 'geojson',
-        data: buildings
-        // data: 'data/code_cycle_faux2.geojson'
+        data: sortedBySavings
       },
       paint : {
           'circle-color' : {
@@ -45,7 +49,7 @@ $(document).ready(function() {
                  [0.5, '#bfd3e6'],
                  [100, '#9ebcda'],
                  [1000, '#8c96c6'],
-                 [2500, '#8856a7'] 
+                 [2500, '#8856a7']
               ]
         },
           'circle-stroke-color': 'rgb(250,77,16)',
@@ -68,7 +72,7 @@ $(document).ready(function() {
                           [{ "zoom": 12, "value": 1800 }, 120],
                           [{ "zoom": 14, "value": 0 }, 16],
                           [{ "zoom": 14, "value": 1 }, 48],
-                          [{ "zoom": 14, "value": 1800}, 400]  
+                          [{ "zoom": 14, "value": 1800}, 400]
                       ]
 
         },
@@ -78,7 +82,7 @@ $(document).ready(function() {
     });
 
     totalSavingsLegend(buildings);
-   
+
 
     createLineChart(buildings);
 
@@ -91,7 +95,7 @@ $(document).ready(function() {
     showMap();
 
   }); //end map.onLoad
-  
+
 
   map.on('click', function(e) {
       var features = map.queryRenderedFeatures(e.point, {
@@ -112,7 +116,7 @@ $(document).ready(function() {
             // append new canvas to the parent again
             $(this).append('<canvas id="' + childCanvasId + '"></canvas>');
           });
-      
+
         updateListingChart(clickedPoint);
       }
     }); //end map on click
@@ -146,7 +150,7 @@ $(document).ready(function() {
    return Math.floor(number * m) / m;
   }
 
- 
+
 
     function updateListingChart(currentFeature) {
 
@@ -166,7 +170,7 @@ $(document).ready(function() {
                  data: [round(prop.mwhDesign),
                        round(prop.mwhTarget),
                         round(prop.mwhSavings)],
-                 backgroundColor: 
+                 backgroundColor:
                  [
                      '#bfd3e6',
                      '#9ebcda',
@@ -176,7 +180,7 @@ $(document).ready(function() {
                      '#816996'
                  ],
                  borderColor: 'rgb(250,77,16)',
-                
+
                  borderWidth: 0.5
              }]
          },
@@ -186,14 +190,14 @@ $(document).ready(function() {
              },
              title: {
                         display: false,
-                        text: "Building: " + prop.name 
+                        text: "Building: " + prop.name
                     },
              scales: {
                  yAxes: [{
                      ticks: {
                          beginAtZero:true
                      }
-                    
+
                  }]
              },
              animation: {
@@ -206,36 +210,36 @@ $(document).ready(function() {
 
          } //options
      }); //end markerChart
-        
+
   } //end updateListingChart
 
 
-    
+
   function calcPropRadius(attributeValue) {
 
     var scaleFactor = 100,
       area = attributeValue * scaleFactor;
 
-    //determine the area (instead of radius) of proportional circle 
+    //determine the area (instead of radius) of proportional circle
     return Math.sqrt(area/Math.PI);
 
   } // end calcPropRadius
 
   function totalSavingsLegend(data) {
-  
+
     const arrayMax = [];
     const arrayCummulative= [];
-   
+
     for (i=0; i<data.features.length; i++) {
-  
+
         var currentFeature = data.features;
         arrayMax.push(currentFeature[i].properties.mwhSavings);
         arrayCummulative.push(currentFeature[i].properties.cumulativeKwh);
-       
+
         var sortedValues = arrayMax.sort(function(a, b) {
           return a - b;
         });
-      
+
     }
      var total = sortedValues.reduce(function(sum, value) {
        return sum + value;
@@ -253,10 +257,10 @@ $(document).ready(function() {
     const arrayTimestamps = [];
     const rawPubDates = [];
     const arrayDateFull = [];
-    
-    
+
+
     for (i=0; i<data.features.length; i++) {
-    
+
         var currentFeature = data.features;
         arrayCummulative.push(currentFeature[i].properties.cumulativeKwh);
 
@@ -265,10 +269,10 @@ $(document).ready(function() {
         const pubDate = new Date(currentFeature[i].properties.originDate);
         // const weekday=new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
         const monthname=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
-        const formattedDate = 
-                          // weekday[pubDate.getDay()] + ' '  + 
-                         monthname[pubDate.getMonth()] + ' '  + 
-                         pubDate.getDate() + ', '  + 
+        const formattedDate =
+                          // weekday[pubDate.getDay()] + ' '  +
+                         monthname[pubDate.getMonth()] + ' '  +
+                         pubDate.getDate() + ', '  +
                          pubDate.getFullYear();
 
         arrayTimestamps.push(formattedDate);
@@ -280,7 +284,7 @@ $(document).ready(function() {
 
       var chart = c3.generate({
           bindto: '#chart',
-          title: { 
+          title: {
               text: 'Cummulative MWh: 2015-2017'
             },
           data: {
@@ -332,17 +336,17 @@ const randomsuffix = getRandomInRange(-0.017, 0.017, 4);
 console.log(randomsuffix);
 
 function generateRandomizedCoordinates(data) {
-  
+
     const randomoizedCoordinatesArray = [];
-   
+
     for (i=0; i<data.features.length; i++) {
-  
+
         var currentFeature = data.features;
-        
+
         arrayCummulative.push(currentFeature[i].properties.cumulativeKwh);
-       
-       
-      
+
+
+
     }
      //console.log(sortedValues); // [1.490147454, 1.508210399, 2.907126588, 3.036347987, 6.321488848, 10.57035492, 11.1674429, 17.25689383]
      var total = sortedValues.reduce(function(sum, value) {
