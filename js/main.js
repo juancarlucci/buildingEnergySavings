@@ -228,13 +228,13 @@ $(document).ready(function() {
   function totalSavingsLegend(data) {
 
     const arrayMax = [];
-    const arrayCummulative= [];
+    const arrayCumulative= [];
 
     for (i=0; i<data.features.length; i++) {
 
         var currentFeature = data.features;
         arrayMax.push(currentFeature[i].properties.mwhSavings);
-        arrayCummulative.push(currentFeature[i].properties.cumulativeKwh);
+        arrayCumulative.push(currentFeature[i].properties.cumulativeKwh);
 
         var sortedValues = arrayMax.sort(function(a, b) {
           return a - b;
@@ -253,7 +253,7 @@ $(document).ready(function() {
   } //end totalSavingsLegend
 
     function createLineChart(data) {
-    const arrayCummulative= [];
+    const arrayCumulative= [];
     const arrayTimestamps = [];
     const rawPubDates = [];
     const arrayDateFull = [];
@@ -262,7 +262,7 @@ $(document).ready(function() {
     for (i=0; i<data.features.length; i++) {
 
         var currentFeature = data.features;
-        arrayCummulative.push(currentFeature[i].properties.cumulativeKwh);
+        arrayCumulative.push(currentFeature[i].properties.cumulativeKwh);
 
         arrayDateFull.push(currentFeature[i].properties.originSeconds);
 
@@ -285,13 +285,13 @@ $(document).ready(function() {
       var chart = c3.generate({
           bindto: '#chart',
           title: {
-              text: 'Cummulative MWh: 2015-2017'
+              text: 'Cumulative MWh: 2015-2017'
             },
           data: {
               x: 'x',
               columns: [
                   ['x', ...arrayDateFullMiliseconds],
-                  ['Cummulative MWh: ', ...arrayCummulative]
+                  ['Cumulative MWh: ', ...arrayCumulative]
               ],
               types: {
                       x :'timeseries',
@@ -319,7 +319,7 @@ $(document).ready(function() {
               }
             },
             colors: {
-                cummulative: '#ff0000',
+                cumulative: '#ff0000',
                 x: '#810f7c'
               }
       }); //end c3 chart
@@ -343,7 +343,7 @@ function generateRandomizedCoordinates(data) {
 
         var currentFeature = data.features;
 
-        arrayCummulative.push(currentFeature[i].properties.cumulativeKwh);
+        arrayCumulative.push(currentFeature[i].properties.cumulativeKwh);
 
 
 
@@ -352,13 +352,13 @@ function generateRandomizedCoordinates(data) {
      var total = sortedValues.reduce(function(sum, value) {
        return sum + value;
      }, 0);
-     //console.log(arrayCummulative); //[2, 19, 22, 33, 44, 46, 53, 54]
+     //console.log(arrayCumulative); //[2, 19, 22, 33, 44, 46, 53, 54]
      var roundedTotal = round(total);
 
      displayTotal = document.getElementById("totalSavings");
 
      displayTotal.append(roundedTotal);
-     // displayTotal.append(arrayCummulative);
+     // displayTotal.append(arrayCumulative);
 
   } //end generateRandomizedCoordinates
 
